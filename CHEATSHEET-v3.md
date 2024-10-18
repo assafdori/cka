@@ -7,18 +7,9 @@ The **Control Plane** manages the Kubernetes cluster and ensures that the desire
 ### 1. **kube-apiserver**
    - **Definition**: The front-end for the Kubernetes control plane. It handles all API requests (CRUD operations on K8s objects like Pods and Services).
    - **Usage**: Exposes the Kubernetes API. All requests (kubectl commands) go through it.
-   - **Commands**: 
-     - `kubectl get pods`: List all pods.
-     - `kubectl describe pod <pod-name>`: Get detailed info about a specific pod.
-
 ### 2. **etcd**
    - **Definition**: A distributed key-value store used to store all the cluster data and state. It's the brain of the cluster where everything is stored.
    - **Usage**: Stores the configuration data of the cluster, including node and pod states.
-   - **Backup Command**: 
-     ```bash
-     etcdctl snapshot save <snapshot-file>
-     ```
-
 ### 3. **kube-scheduler**
    - **Definition**: Monitors newly created Pods that have no assigned nodes and assigns them to nodes based on resource requirements, constraints, and policies.
    - **Usage**: Ensures Pods are scheduled onto the appropriate node.
