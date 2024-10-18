@@ -114,5 +114,4 @@ This repository tracks my progress of learning Kubernetes and preparing for the 
 - [ ] Lesson 106
 - [ ] Lesson 107
 - [ ] Lesson 108
-- [ ] Lesson 109
-- [ ] Lesson 110
+- [ ] Celebrate 🍾
