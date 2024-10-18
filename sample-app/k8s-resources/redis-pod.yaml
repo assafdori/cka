@@ -11,4 +11,3 @@ spec:
     image: redis
     ports:
     - containerPort: 6379
-
