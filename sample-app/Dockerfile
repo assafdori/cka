@@ -1,7 +1,7 @@
 FROM golang as builder
 WORKDIR /app
 COPY . .
-RUN CGO_ENABLED=0 GOARCH=${TARGETARCH} GOOS=linux go build -o guestbook .
+RUN CGO_ENABLED=0 GOARCH=amd64 GOOS=linux go build -o guestbook .
 CMD ["/app/guestbook"]
 
 FROM scratch
