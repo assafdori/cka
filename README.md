@@ -4,7 +4,7 @@
 This repository tracks my progress of learning Kubernetes and preparing for the CKA exam. There will be some random bits of information I find valuable during my learning phase. I also track my lessons through this repository.
 
 ## Cheatsheet
-- [CKA CHEATSHEET](./CHEATSHEET.md)
+- [CKA CHEATSHEET](./CHEATSHEET-v3.md)
 ## Lesson Progression
 - [ ] Lesson 1
 - [ ] Lesson 2
