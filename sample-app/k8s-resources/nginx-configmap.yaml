@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-homepage
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Assaf's Custom Nginx Page</title>
+    </head>
+    <body>
+      <h1>Welcome to my homepage, unefficiently hosted on a whole EKS cluster!</h1>
+    </body>
+    </html>
