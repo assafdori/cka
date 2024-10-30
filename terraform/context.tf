@@ -1,5 +1,5 @@
 locals {
-  region = "us-east-1"
+  region = "us-west-2"
   cluster_name = module.eks.cluster_name
   cluster_alias = "amazon-cluster"
 }
