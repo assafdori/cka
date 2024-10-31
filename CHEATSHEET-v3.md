@@ -1,7 +1,7 @@
 # Kubernetes Ultimate Cheat Sheet 📝🚀
 
 <p align="center">
-    <img width="646" alt="kubernetes" src="https://gist.github.com/user-attachments/assets/2d53c750-d6c6-459a-bc4a-76cea1236615">
+    <img width="646" alt="kubernetes" src="https://raw.githubusercontent.com/assafdori/cka/refs/heads/main/kubernetes.png">
 </p>
 
 ## Control Plane Components 🛠️
