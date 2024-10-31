@@ -497,6 +497,17 @@ spec:
 
 ---
 
+## Volume & Storage Basics 📦
+
+1. **PersistentVolume (PV)**: This is the actual storage resource in the cluster. You can think of it as a "pool" of storage that Kubernetes knows about, but which isn't tied to any specific application until claimed.
+
+2. **PersistentVolumeClaim (PVC)**: This is essentially a request to claim a chunk of that storage. When you create a PVC, it’s matched to an available PV that meets its requirements (size, access mode, etc.), making that storage available to the application.
+
+3. **StatefulSet**: This workload controller manages stateful applications that need stable storage and unique identities across pods. A `StatefulSet` relies on PVCs for storage—each pod created by a StatefulSet can request a PVC, which in turn binds to a PV, ensuring persistent data storage even if the pod is restarted or rescheduled.
+
+In summary, the **PV provides storage**, the **PVC claims that storage** for an application, and the **StatefulSet orchestrates pods that need consistent, durable storage**.
+
+---
 ## Useful Commands 💡
 
 1. **Get cluster information**:
