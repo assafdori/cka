@@ -1,5 +1,9 @@
 # Kubernetes Ultimate Cheat Sheet 📝🚀
 
+<p align="center">
+    <img width="646" alt="kubernetes" src="https://gist.github.com/user-attachments/assets/2d53c750-d6c6-459a-bc4a-76cea1236615">
+</p>
+
 ## Control Plane Components 🛠️
 
 The **Control Plane** manages the Kubernetes cluster and ensures that the desired state is maintained. It runs the following components:
