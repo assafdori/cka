@@ -12,14 +12,6 @@ The tasks are prefixed with numbers to indicate the proper order to run them in.
 
 Each set of examples are deployed into their own namespace. This helps prevent naming conflicts and makes it easier to clean up (because deleting a namesapce deletes the resources within it)
 
-```
-task 01-create-namespace
-
-### OTHER TASKS
-
-task 07-delete-namespace
-```
-
 ## Resource Types
 
 🚨 **Note:** You should follow this ordering (and this is the order they are covered in the video course)
