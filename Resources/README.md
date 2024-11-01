@@ -14,7 +14,7 @@ Each set of examples are deployed into their own namespace. This helps prevent n
 
 ## Resource Types
 
-🚨 **Note:** You should follow this ordering (and this is the order they are covered in the video course)
+🚨 **Note:** You should follow this ordering when learning resource types. 
 
 - **Namespace**: Provides a way to divide cluster resources between multiple users.
 - **Pod**: The smallest and simplest Kubernetes object. Represents a set of running containers on your cluster.
