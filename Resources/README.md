@@ -6,10 +6,6 @@ This sections covers most of these resource types with working examples for each
 
 ## How to use this section
 
-Each directory represents a resource type and has a Taskfile containing all necessary commands.
-
-The tasks are prefixed with numbers to indicate the proper order to run them in.
-
 Each set of examples are deployed into their own namespace. This helps prevent naming conflicts and makes it easier to clean up (because deleting a namesapce deletes the resources within it)
 
 ## Resource Types
