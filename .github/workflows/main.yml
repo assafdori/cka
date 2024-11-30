@@ -21,10 +21,14 @@ jobs:
       pull-requests: write # Required to add comment and label.
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: hashicorp/setup-terraform@v3
-      - uses: devsectop/tf-via-pr@v12
-        with:
+    - name: Install Github CLI
+      run: sudo apt-get install gh -y
+
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - uses: hashicorp/setup-terraform@v3
+    - uses: devsectop/tf-via-pr@v12
+      with:
           # Only plan by default, or apply with lock on merge.
           command: ${{ github.event_name == 'push' && 'apply' || 'plan' }}
           arg-lock: ${{ github.event_name == 'push' }}
