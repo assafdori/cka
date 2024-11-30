@@ -19,16 +19,17 @@ jobs:
       checks: write        # Required to add status summary.
       contents: read       # Required to checkout repository.
       pull-requests: write # Required to add comment and label.
+      packages: write      # Required to upload artifact.
 
     steps:
       - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v3
-      - uses: devsectop/tf-via-pr@v12.0.8
+      - uses: devsectop/tf-via-pr@v12
         with:
           # Only plan by default, or apply with lock on merge.
           command: ${{ github.event_name == 'push' && 'apply' || 'plan' }}
           arg-lock: ${{ github.event_name == 'push' }}
           #arg-var-file: env/dev.tfvars
-          arg-workspace: default
+          arg-workspace: dev-use1
           working-directory: terraform
           plan-encrypt: ${{ secrets.PASSPHRASE }}
