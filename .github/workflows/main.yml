@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v3
-      - uses: devsectop/tf-via-pr@v12
+      - uses: devsectop/tf-via-pr@v12.0.8
         with:
           # Only plan by default, or apply with lock on merge.
           command: ${{ github.event_name == 'push' && 'apply' || 'plan' }}
