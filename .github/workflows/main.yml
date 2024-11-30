@@ -29,6 +29,6 @@ jobs:
           command: ${{ github.event_name == 'push' && 'apply' || 'plan' }}
           arg-lock: ${{ github.event_name == 'push' }}
           #arg-var-file: env/dev.tfvars
-          arg-workspace: ${{ github.event_name == 'push' && 'default' || 'pr-${{ github.event.number }}' }}
+          arg-workspace: default
           working-directory: terraform
           plan-encrypt: ${{ secrets.PASSPHRASE }}
