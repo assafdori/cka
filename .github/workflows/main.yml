@@ -21,7 +21,7 @@ jobs:
       pull-requests: write # Required to add comment and label.
 
     steps:
-      - uses: actions/checkout@3
+      - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v3
       - uses: devsectop/tf-via-pr@v12
         with:
