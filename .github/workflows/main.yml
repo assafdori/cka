@@ -28,7 +28,7 @@ jobs:
           # Only plan by default, or apply with lock on merge.
           command: ${{ github.event_name == 'push' && 'apply' || 'plan' }}
           arg-lock: ${{ github.event_name == 'push' }}
-          arg-var-file: env/dev.tfvars
+          #arg-var-file: env/dev.tfvars
           arg-workspace: dev-use1
           working-directory: terraform
           plan-encrypt: ${{ secrets.PASSPHRASE }}
